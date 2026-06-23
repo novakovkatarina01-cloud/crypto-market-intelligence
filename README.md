@@ -10,6 +10,24 @@ The pipeline extracts cryptocurrency market data from the CoinGecko API, perform
 ## Architecture
 
 CoinGecko API → Databricks ETL → PostgreSQL Database → Tableau Dashboard
+## Database Schema
+
+The cleaned cryptocurrency data is stored in a PostgreSQL database (`crypto_market`) in the table `crypto_prices`.
+
+Key fields include:
+
+- id
+- symbol
+- name
+- current_price
+- market_cap
+- market_cap_rank
+- total_volume
+- high_24h
+- low_24h
+- price_change_percentage_24h
+- last_updated
+- etl_load_timestamp
 
 ## Technologies Used
 
