@@ -5,7 +5,7 @@
 
 This project builds an end-to-end cryptocurrency market intelligence pipeline using the CoinGecko API, Databricks, PostgreSQL, and Tableau.
 
-The pipeline extracts cryptocurrency market data from the CoinGecko API, performs data transformation and cleaning in Databricks, stores the processed data in PostgreSQL, and visualizes key market insights through an interactive Tableau dashboard.
+The pipeline extracts cryptocurrency market data from the CoinGecko API, performs data transformation and cleaning in Databricks, stores the processed data in PostgreSQL, and visualizes key market insights through an interactive Tableau dashboard. Aditionally automated Crypto ETL Job is created that will automaticaly run everyday once.
 
 ## Architecture
 
@@ -28,6 +28,18 @@ Key fields include:
 - price_change_percentage_24h
 - last_updated
 - etl_load_timestamp
+
+  ##
+  # Databricks Automation
+
+A Databricks Job was configured to automate execution of the ETL notebook.
+
+Job Name: Crypto ETL Job
+
+Purpose:
+- Run the ETL pipeline automatically
+- Refresh cryptocurrency market data
+- Support automated data updates
 
 ## Technologies Used
 
